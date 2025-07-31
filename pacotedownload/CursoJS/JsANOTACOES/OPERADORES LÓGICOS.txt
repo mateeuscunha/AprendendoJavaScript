@@ -1,0 +1,54 @@
+	OPERADORES LÓGICOS
+Há, em JS, cinco tipos de operadores: aritméticos, atribuição(`recebe` `=` na variável), relacionais, lógicos e ternário.
+
+Sobre os operadores aritméticos, temos:
+
++ - adição
+- - subtração
+* - multiplicação
+/ - divisão real (com vírgula)
+% - resto da divisão inteira
+** - potência
+
+Sobre os relacionais, temos:
+
+> - maior que
+< - menor que
+>= - maior ou igual que
+<= - menor ou igual que
+== - igual a
+!= - diferente de
+
+Contudo, temos uma diferença quando se trata de identidade(string, number):
+
+> 5 == 5
+true
+> 5 == "5"
+true
+> 5 === "5"
+false
+
+Sobre os lógicos, temos
+
+! - não (negação)
+&& - e (conjunção)
+|| - ou (disjunção)
+(NESSA ORDEM DE PRIORIDADE)
+	
+Sobre o	operador ternário, temos:
+
+Temos dois simbolos que aparecem na expressão: ? e :
+
+A estrutura é a seguinte:
+{teste}?{true}:{false}
+
+primeiro bloco {teste}: é um teste, pode dar verdadeiro ou falso
+
+segundo bloco {true}: é o que vai acontecer quando o teste der verdadeiro
+
+terceiro bloco {false}: é o que vai acontecer quando o teste der falso
+
+exemplo:
+{média >= 7}?{"Aprovado"}:{"Reprovado"}
+
+

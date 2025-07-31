@@ -1,0 +1,4 @@
+	SIMPLIFICAÇÃO(operadores de atribuição)
+n = n + 4 -- equivale à -- n += 4 -- equivale à -- n ++ 4
+n = n - 5 -- equivale à -- n -= 5 -- equivale à -- n -- 5
+n = n * 2 -- equivale à -- n *= 2 -- equivale à -- n ** 2

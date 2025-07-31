@@ -1,0 +1,10 @@
+	CONVERSÕES DE NÚMEROS E STRINGS EM JS
+
+String para Número:
+Number.parseInt(string)
+Number.parseFloat(string)
+Number(string)
+
+Número para String:
+String(n)
+n.toString()

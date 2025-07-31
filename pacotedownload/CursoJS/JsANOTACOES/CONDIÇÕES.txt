@@ -1,0 +1,66 @@
+	CONDIÇÕES 
+	Condição simples:
+> if(condição){
+> bloco de código
+> }
+
+	Condição com else:
+
+> if(condição){
+> bloco de código
+> }
+> else{
+> bloco de código
+> }
+
+	Condição com else if:
+
+> if(condição){
+> bloco de código
+> }
+> else if(condição) {
+> bloco de código
+> }
+> else if(condição) {
+> bloco de código
+> } 
+> else { 
+> bloco de código
+> }
+
+
+	Condição com switch:
+switch(expressão) {
+   case valor 1:
+
+	... 
+
+	break
+   case valor 2:
+
+	... 
+
+	break
+   case valor 3:
+
+	... 	
+
+	break
+   case valor 4:
+
+	... 	
+
+	break
+   default:
+
+	... 
+
+	break
+}
+
+
+
+
+
+
+

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudando o DOM</title>
+    <style>
+        body {
+            background-color: rgb(61, 61, 250);
+            color: white;
+            font: normal 20pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        Iniciando estudos com o DOM 
+    </h1>
+    <p>
+        Aprendendo a usar o <strong>DOM</strong> em JavaScript. <br>
+        Brincando com os elementos :)
+    </p>
+    <div id="first"> 
+        Primeira Div 
+    </div>
+    <div name="second"> 
+        Segunda Div
+    </div>
+    <div class="third">
+        TERCEIRA DIV
+    </div>
+    <div id="queryone">
+        Quarta Div
+    </div>
+    <div class="querytwo">
+        Quinta Div
+    </div>
+    <script>
+        window.document.writeln("<br> ESPAÇO PARA AS ALTERAÇÕES:")
+        //apenas brincando com a árvore DOM
+
+        var d1 = window.document.getElementById("first")
+        window.document.writeln("<br>" + d1.innerText)
+        //selecionei a div pelo ID e escrevi, com uma quebra de linha, o texto presente nela
+        d1.style.background = "green"
+        //colori o fundo dela de verde
+        d1.innerText += " --- Alteração: fundo verde e escrevei o conteúdo dela nas linhas de baixo"
+
+        var d2 = window.document.getElementsByName("second")[0]
+        d2.innerText = d2.innerText.toUpperCase()
+        //d2.innerText = "SEGUNDA DIV" --- daria a mesma coisa
+        //localizei, agora pelo name, e mudei o texto para UpperCase
+        d2.innerText += " --- Alteração: mudei 'Segunda Div' para maiúsculas"
+        
+        var d3 = window.document.getElementsByClassName("third")[0]
+        window.document.writeln(`<br> ${d3.innerHTML.toLowerCase()}`)
+        /*
+        localizei, agora pela class, e escrevi no documento o texto em minúsculas  
+        (com a quebra de linha)
+        */
+        d3.innerText += " --- Alteração: agora o conteúdo já era em upper, eu o escrevi em lower abaixo"
+        /*
+                ------ Agora com querySelector #ID .Class 
+        */
+
+        var d4 = window.document.querySelector("div#queryone")
+        window.document.writeln("<br>" + d4.innerText)
+        d4.style.color = "red"
+        d4.innerText += " --- Alteração: cor da letra para vermelho e reescrita abaixo"
+
+        var d5 = window.document.querySelector("div.querytwo")
+        window.document.writeln("<br>" + d5.innerText)
+        d5.style.color = "green"
+        d5.innerText += " --- Alteração: cor da letra para verde e reescrita abaixo"    
+    </script>
+</body>
+</html>

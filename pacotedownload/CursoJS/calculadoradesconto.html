@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <h1>
+        
+    </h1>
+    <p>
+
+    </p>
+    <script>
+        var preçooriginal = Number(window.prompt("Digite o preço original do produto: "))
+        var percentual = Number(window.prompt("Insira agora o percentual de desconto: "))
+        var preçofinal = preçooriginal - preçooriginal * (percentual/100)
+            if (preçofinal >= 100) {window.alert("Parabéns, você tem frete grátis!!")}   
+            else {window.alert(`Infelizmente você não tem frete grátis.
+                Para conseguir gratuidade na entrega,
+                 você pode agregar ${100 - preçofinal} reais em itens`)}
+        window.alert(`Preço original: R$ ${preçooriginal}`)
+        window.alert(`Desconto: R$ ${preçooriginal * (percentual/100)}`)
+        window.alert(`Preço final: R$ ${preçofinal}`)
+
+    </script>
+</body>
+</html>

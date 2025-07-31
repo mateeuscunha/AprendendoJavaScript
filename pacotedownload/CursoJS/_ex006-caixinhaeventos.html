@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <input type="button"> Botão de Zerar 
+  
+    <style>
+        div#area {
+            font: normal 20pt Arial;
+            background: rgb(63, 99, 10);
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+        div#mexendo{
+            width: 200px;
+            background-color: purple;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div id="area">
+        Interaja...
+    </div>
+    <script>
+        var div = document.querySelector("div#area") 
+        var div2 = document.querySelector("div#mexendo")
+        var input = document.querySelector('[type="button"]')
+        div.addEventListener("click", clicar)
+        div.addEventListener("mouseenter", entrar)
+        div.addEventListener("mouseleave", sair)
+        input.addEventListener("click", zerar)
+
+        function clicar(){
+            div.textContent = "Clicou"
+            div.style.background = 'blue'
+        }
+        function entrar(){
+            div.textContent = "Entrou"
+            div.style.background = "purple"
+        }
+        function sair() {
+            div.textContent = "Saiu"
+            div.style.background = 'brown'
+        }
+        function zerar(){
+            div.textContent = "Interaja..."
+            div.style.background = 'rgb(63, 99, 10)'
+        }
+    </script>
+</body>
+</html>

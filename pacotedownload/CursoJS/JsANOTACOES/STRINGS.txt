@@ -1,0 +1,11 @@
+	FORMATAÇÃO DE STRINGS EM JS
+
+`Eu estou aprendendo ${linguagem} pelo Youtube`
+/* --- Tem que usar a crase (``) e colocar essa estrutura para formatar: ${} --- */
+
+	STRINGS
+
+s.length // me diz o tamanho da string, numero de caracteres
+
+s.toUpperCase() //tudo para letra maiúscula
+s.toLowerCase() //tudo para letra minúscula

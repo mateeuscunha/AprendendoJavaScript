@@ -1,0 +1,62 @@
+	CONVERSÕES DE NÚMEROS E STRINGS EM JS
+
+String para Número:
+Number.parseInt(string)
+Number.parseFloat(string)
+Number(string)
+
+Número para String:
+String(n)
+n.toString()
+
+	FORMATAÇÃO DE STRINGS EM JS
+
+`Eu estou aprendendo ${linguagem} pelo Youtube`
+
+	STRINGS
+
+s.length // me diz o tamanho da string, numero de caracteres
+
+s.toUpperCase() //tudo para letra maiúscula
+s.toLowerCase() //tudo para letra minúscula
+
+	NÚMEROS
+
+n.toFixed(`numero de casas que você quer depois da vírgula`)
+n.replace('alguma coisa', 'por outra')
+
+*** transformar um número em valor monetário:
+n.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
+
+	OPERADORES ARITMÉTICOS
++ --- adição
+- --- subtração
+* --- multiplicação
+/ --- divisão real(com vírgula)
+% --- resto da divisão inteira
+** --- potenciação
+
+	SIMPLIFICAÇÃO(operadores de atribuição)
+n = n + 4 -- equivale à -- n += 4 -- equivale à -- n ++ 4
+n = n - 5 -- equivale à -- n -= 5 -- equivale à -- n -- 5
+n = n * 2 -- equivale à -- n *= 2 -- equivale à -- n ** 2
+	
+	OPERADORES LÓGICOS
+! - não
+&& - e
+|| - ou 
+(NESSA ORDEM DE PRIORIDADE)
+	OPERADOR TERNÁRIO
+{teste}?{true}:{false}
+{média >= 7}?{"Aprovado"}:{"Reprovado"}
+
+	
+
+
+
+
+
+
+
+
+

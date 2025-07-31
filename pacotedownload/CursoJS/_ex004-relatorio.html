@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <script>
+    
+    var nome = window.prompt("digite seu nome: ")
+    document.writeln(`Seja bem vindo(a), ${nome}! Seu nome tem ${nome.length} letras. <br/>`)
+        /*
+        document.write() escreve no documento, ao passo que
+        document. writeln() escreve na linha de baixo
+        */
+    var idade = Number(window.prompt(`Por favor, ${nome}, poderia me informar sua idade? `))
+    document.writeln(`Que legal cara! Sua idade é ${idade} anos. E, o dobro da sua idade é: ${2 * idade} <br/>`) 
+        /*
+        "<br/>" é a quebra de linha em html, significa brake roll.
+        Eu posso colocar pra ele escrever isso na tela, pois ele está escrevendo no HTML,
+        logo, tudo que digita lá, é como se eu tivesse digitando no código html.
+        Por isso, posso usar, por exemplo, a tag <strong> </strong>
+        que deixa a letra em negrito
+        */
+    var altura = Number.parseFloat(window.prompt(`Para fechar, ${nome}, poderia me informar sua altura em metros? `))
+    document.writeln(`Maneiro, sua altura é: ${altura.toFixed(2)} metros`)
+    window.alert(`Obrigado pela compreensão, ${nome}.`)    
+    </script>
+
+</body>
+</html>

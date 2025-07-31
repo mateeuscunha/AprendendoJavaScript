@@ -1,0 +1,23 @@
+	DOM
+Selecionando elementos no DOM:
+É possível selecionar elementos no DOM por cinco atributos:
+- Marca
+   getElementsbyTagName()[0] -- pega o primeiro
+   getElementsbyTagName()[1] -- pega o segundo 
+- ID 
+   getElementById()
+- Nome
+   getElementsByName()[0] -- pega o primeiro
+   getElementsByName()[1] -- pega o segundo
+- Classe
+   getElementsByClassName()[0]
+   getElementsByClassName()[1] 
+- Seletor
+   querySelector()
+   querySelectorAll()
+
+	innerText e innerHTML 
+
+> algum_elemento.innerText -- me devolve o que há de texto dentro daquele elemento, incluindo o texto de seus filhos.
+
+> algum_elemento.innerHTML -- me devolve tudo o que há dentro daquele elemento (texto + tags), faria diferença, por exemplo, se houvesse ali uma tag <strong>, pois no innerText eu não perceberia a existência dessa tag, já aqui no innerHTML eu perceberia.

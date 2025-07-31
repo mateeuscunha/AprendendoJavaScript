@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <h1>
+        
+    </h1>
+    <p>
+
+    </p>
+    <script>
+        var salario, idade, valor = 1
+        window.alert("Esse é um simulador de crédito pessoal. Forneça seus dados e diremos se você pode ou não pegar um empréstimo.")
+        var salario = Number(window.prompt("Digite o seu sálario: "))
+        var idade = Number(window.prompt("Digite a sua idade: "))
+        var valor = Number(window.prompt("Digite o valor do empréstimo: "))
+        if (isNaN(salario) || isNaN(idade) || isNaN(valor)) 
+        {alert("Por favor, digite apenas valores númericos")}
+        else {}
+        
+        var prazo = {}
+        if (valor <= 5000) {prazo = 12}
+        else {prazo = 24}
+
+        var parcela = valor / prazo
+        var problema = ``
+        var numproblemas = 0
+        if (idade < 18) 
+            {problema += ` A idade mínima é 18 anos.
+             Daqui ${18 - idade} ano(s) você pode tentar novamente \n`
+            numproblemas += 1}
+        if (salario < 1500) 
+        {problema += `O salário mínimo para o resgate de empréstimos é R$1500,00. 
+            Você precisa ganhar um aumento de R$${1500 - salario} \n`
+            numproblemas += 1} 
+        if (valor > 10 * salario) 
+        {problema += `Não é possível pegar um empréstimo dez vezes maior que o seu sálario`
+            numproblemas += 1}
+        
+        numproblemas == 0?
+        window.alert(`Você está apto a pegar o empréstimo. \n 
+        Você pagará ${parcela} reais, durante ${prazo} meses`)
+        :window.alert(`Você não está apto a pegar o empréstimo.
+        Detectamos ${numproblemas} problema(s) na sua ficha.\n Declaro-o(s) a seguir: ${problema}`)    
+    </script>
+</body>
+</html>

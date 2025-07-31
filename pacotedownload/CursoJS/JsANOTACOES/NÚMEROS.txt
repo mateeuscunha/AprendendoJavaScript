@@ -1,0 +1,25 @@
+	NÚMEROS
+
+n.toFixed(`numero de casas que você quer depois da vírgula`)
+exemplo: 
+	var n1 = 1545.5
+	n1.toFixed(2) --- resulta em: '1545.50'
+
+n.replace('alguma coisa', 'por outra')
+/*
+Funciona, na verdade, apenas com string :)
+*/
+
+*** transformar um número em valor monetário:
+n.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
+exemplo:
+
+> n1 = 1545.50
+1545.5
+
+> n1.toLocaleString("pt-BR", {style: "currency", currency: "BRL"})
+'R$ 1.545,50'
+> n1.toLocaleString("pt-BR", {style: "currency", currency: "EUR"})
+'€ 1.545,50'
+> n1.toLocaleString("pt-BR", {style: "currency", currency: "USD"})
+'US$ 1.545,50'
