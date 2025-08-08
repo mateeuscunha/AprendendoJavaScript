@@ -6,14 +6,14 @@ function carregar(){
     //var hora = 2
     msg.innerHTML = `Agora são ${hora} horas.`
     if (hora >=0 && hora < 12) {
-        img.src = 'fotomanha.jpg'
+        img.src = 'fotos/fotomanha.jpg'
         document.body.style.background = '#f7d026ff'
     } else if (hora < 18) {
-        img.src = 'fototarde.jpg'
+        img.src = 'fotos/fototarde.jpg'
         document.body.style.background = '#b65f0dff'
     }
     else {
-        img.src = 'fotonoite.jpg'
+        img.src = 'fotos/fotonoite.jpg'
         document.body.style.background = '#360d77'
     }
 }
