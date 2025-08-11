@@ -1,0 +1,12 @@
+	ESTRUTURAS DE REPETIÇÃO	
+   while (condição){
+	BLOCO DE CÓDIGO
+   }
+
+- A partir do momento que a condição deixa de ser "true", para de rodar o loop e continua o fluxo.
+
+   do {
+	BLOCO DE CÓDIGO
+   } while (condição)
+
+- É a mesma coisa, mas testa no final invés do começo.
