@@ -10,3 +10,9 @@ for(var a = 1;a <= 3;a++) {
     console.log(`Jogada ${a}.`)
 }
 console.log(`FIM!`)
+
+
+    /*
+    STRUCTURE
+for(início; teste; incremento) {}
+   */
