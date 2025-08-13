@@ -1,0 +1,5 @@
+	ESTRUTURA DE REPETIÇÃO COM VARIÁVEL DE CONTROLE - aula #14 JavaScript Curso em vídeo
+   
+   for(início; teste; incremento) {
+   
+   }
