@@ -1,0 +1,17 @@
+    VARIÁVEIS COMPOSTAS
+var a = [0, 1, 2] //isso é uma variável composta (array, parece uma lista)
+- Array é um vetor que agrupa elementos. No caso exposto, o vetor é a própria variável "a" e os elementos são as posições, coincidem com o conteúdo pois coloquei os números ordinários, mas o conteúdo, de fato, é: "0", "1", "2".  
+
+O JavaScript cria posições automaticamente, por exemplo:
+> let num = [5, 8, 4] // Perceba que só vai até o índice "2"
+> num[3] = 6 // Aqui ele cria o índice "3" e adiciona o conteúdo nele.
+Porém, caso você queira adicionar no último da lista, sem se importar com índices, é só usar:
+> num.push(7) // Ele cria um último da fila e já adiciona o "7"
+
+Para saber o tamanho da variável composta, basta usar o atributo (aqui eu usei atributo, pois de fato o é, e não, um método que eu teria que usar "método" + "()") length.
+
+Para colocar em ordem crescente, use o método "sort". num.sort() === [4, 5, 6, 7, 8]
+
+Para buscar valores dentro de uma var composta: num.indexOf(7)
+É como se eu perguntasse se há o valor 7 dentro da var. Ele me retorna o índice de 7, no caso, #3.
+No caso de não existir o valor buscado, ele retorna: -1.
