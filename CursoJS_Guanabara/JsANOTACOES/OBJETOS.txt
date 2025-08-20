@@ -1,0 +1,6 @@
+		OBJETOS
+	-Um objeto é tipo um array, porém você pode trocar os valores do indíce, ao ínves de sempre fixo  (#0, #1, #2, #3), você pode colocar o indíce que quiser. Exemplo: 
+
+let objeto = {nome:"Mateus", sexo:"M", peso:66.8, engordar(p){}}
+
+- Esse último é uma função, e sim, guarda funções.
